@@ -86,7 +86,13 @@ p{
     border-color: transparent transparent #555 transparent;
   }
 */  
-  .report-name:hover .description {
+.report-name:hover .description {
     visibility: visible;
     opacity: 1;
   } 
+  
+@media screen and (max-width : 420px) {
+    .description{
+        width: 15rem;
+    }
+}
