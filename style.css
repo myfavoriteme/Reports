@@ -4,6 +4,7 @@ body{
     font-size: 10px;
     display: flex;
     justify-content: center;
+    user-select: none;
 }
 .wrapper{
     display: flex;
@@ -35,7 +36,7 @@ body{
     /* padding-top: 0.65rem; */
 }
 p{
-    visibility: hidden;
+    font-size: 1rem;
     /* display: none; */
 }
 /* .report1:hover{
@@ -85,7 +86,7 @@ p{
     border-color: transparent transparent #555 transparent;
   }
 */  
-  .report:hover .description {
+  .report-name:hover .description {
     visibility: visible;
     opacity: 1;
   } 
