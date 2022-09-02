@@ -6,6 +6,9 @@ body{
     justify-content: center;
     user-select: none;
 }
+.title{
+    margin-bottom: 2rem;
+}
 .wrapper{
     display: flex;
     justify-content: center;
