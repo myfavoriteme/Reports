@@ -92,7 +92,11 @@ p{
 .report-name:hover .description {
     visibility: visible;
     opacity: 1;
-  } 
+}
+.show-description{
+    visibility: visible;
+    opacity: 1;
+}
   
 @media screen and (max-width : 420px) {
     .description{
