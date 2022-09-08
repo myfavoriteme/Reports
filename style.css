@@ -97,6 +97,9 @@ p{
     visibility: visible;
     opacity: 1;
 }
+.g-form__input-wrapper_hidden{
+    display: none;
+}
   
 @media screen and (max-width : 420px) {
     .description{
