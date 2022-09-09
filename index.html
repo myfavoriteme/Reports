@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body">
     <div class="wrapper">
         <header>
             <!-- <h1 class="header">Спасибо, что выбрали нашу компанию</h1> -->
@@ -17,18 +17,21 @@
 
         <main class="main">
             <form class="g-form" id="g-form-1" action="" method="post" autocomplete="off">
-                <h2 class="title">Какие данные вы хотели бы получать в отчете?</h2>
+                
 
-                <div class="report">
-                    <div class="input-wrapper">
-                        <input class="checkbox" type="text" name="Название организации" id="reportName">
-                    </div>
+                <div class="report textarea">
                     
                     <section class="report_item">
-                        <div class="report-name item" num="one">Укажите название вашей организации
+                        <div class="report-name item zero" num="zero">Укажите название вашей организации
                         </div>  
-                    </section>  
+                    </section>
+                    
+                    <div class="input-wrapper">
+                        <input class="checkbox text" type="text" name="Название организации" id="reportName" placeholder="Название организации" required>
+                    </div>
                 </div>
+
+                <h2 class="title">Какие данные вы хотели бы получать в отчете?</h2>
 
                 <div class="report">
                     <div class="input-wrapper">
@@ -79,6 +82,146 @@
                                 <li>Достаточный промежуток времени</li>
                                 <li>Несущественное перемещение</li>
                             </ol> 
+                        </span>    
+                        </div>  
+                    </section>  
+                </div>
+                
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Заправки" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item">Заправки
+                        <span class="description">Эта таблица отчета позволяет узнать, где и когда производились заправки объекта. Здесь показываются заправки, зарегистрированные вручную и определенные при помощи датчиков уровня топлива. О том, как правильно настроить параметры, используемые в отчете, читайте в настройках ДУТ. Если за указанный интервал отчета не обнаружено ни одной заправки, таблица не показывается.</span>    
+                        </div>  
+                    </section>
+                </div> 
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Сливы" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item">Сливы
+                        <span class="description">Эта таблица отчета позволяет узнать, где и когда с объекта сливалось топливо. Сливы топлива определяются во время стоянок и остановок, а также при движении объекта, если включена опция Поиск сливов в движении.</span>    
+                        </div>  
+                    </section>
+                </div>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Геозоны" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name">Геозоны
+                        <span class="description">Используется для анализа посещения объектами геозоны.</span>    
+                        </div>  
+                    </section>
+                </div>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Моточасы" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item">Моточасы
+                        <span class="description">Отчет показывает, как долго работал объект, сколько времени находился в движении, сколько топлива потратил за этот промежуток. Также может быть показана длительность и эффективность работы навесного оборудования.</span>    
+                        </div>  
+                    </section>
+                </div>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Трассировка датчика" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item">Трассировка датчика
+                        <span class="description">Эта таблица показывает значение датчика в определенные точки времени. При экспорте в MS Excel это позволяет на основе полученных данных создавать пользовательские графики.</span>    
+                        </div>  
+                    </section>
+                </div>
+
+                
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Превышение скорости" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item">Превышение скорости
+                        <span class="description">В этом отчете показываются интервалы превышения скорости. Скоростной предел зависит от метода определения превышения, выбранного в свойствах объекта на вкладке Дополнительно.
+                            (Если на вкладке Дополнительно выбран метод Дорожные ограничения, то превышение скорости для отчета определяется в соответствии с теми ограничениями из карт, которые действовали на момент превышения.)</span>    
+                        </div>  
+                    </section>
+                </div>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Поездки между геозонами" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item">Поездки между геозонами
+                        <span class="description">Wialon может отслеживать поездки между геозонами, если одну из них (или несколько) назначить отправным пунктом, а другую (или несколько) — конечным.</span>    
+                        </div>  
+                    </section>
+                </div>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Техобслуживание" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name  item">Техобслуживание
+                        <span class="description">Таблица по техобслуживанию содержит перечень сервисных работ, совершенных за указанный период и зарегистрированных пользователем для выбранного объекта.</span>    
+                        </div>  
+                    </section>
+                </div>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Плановое техобслуживание" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item">Плановое техобслуживание
+                        <span class="description">Таблица по плановому техобслуживанию содержит перечень необходимых сервисных работ, а также состояние их выполнения. В таблицу могут быть включены столбцы, описанные ниже.</span>    
+                        </div>  
+                    </section>
+                </div>
+
+
+
+
+                <h2 class="title">Какие уведомления вы хотели бы получать?</h2>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Остановки" id="report_3">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item">Скорость
+                        <span class="description">Уведомление этого типа позволяет контролировать скорость транспортного средства.</span>    
+                        </div>  
+                    </section>  
+                </div>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Стоянки" id="report_4">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item">Геозона
+                        <span class="description">Позволяет контролировать местоположение объекта и получать уведомление когда машина покинула геозону или придыла в нее   
                         </span>    
                         </div>  
                     </section>  
