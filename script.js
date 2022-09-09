@@ -44,7 +44,7 @@ console.log(navigator.userAgent);
 
 
 
-if ("Android" == "Android") {
+if (phone == "Android") {
 
 // Show description
 
