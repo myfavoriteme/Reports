@@ -44,7 +44,7 @@ console.log(navigator.userAgent);
 
 
 
-if (phone == "Android") {
+if (IsPC() == false) {
 
 // Show description
 
