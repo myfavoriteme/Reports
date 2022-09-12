@@ -8,8 +8,13 @@ $(function() {
 		// Сообщение при успешной отправке данных
 		let successRespond = 'Сообщение успешно отправлено. Посмотрите результат <a target="_blank" href="https://docs.google.com/spreadsheets/d/1XcTivCQL4EZJf1x2kB4UwGj5bAi0sfpx1PwtaKgOWHo/edit?usp=sharing">тут</a>';
 
+		
+
 		// Сообщение при ошибке в отправке данных
 		let errorRespond = 'Не удалось отправить сообщение. Cвяжитесь с администратором сайта по адресу <a href="mailto:smart-landing@ya.ru">smart-landing@ya.ru</a>';
+		
+		// let overlay = $(this).find('.over');
+		let overlay = document.querySelector('.over');
 
 		// Id текущей формы
 		let form = $('#' + $(this).attr('id'))[0];
@@ -21,7 +26,8 @@ $(function() {
 		let formTitle = $(this).find('.g-form__title_main');
 
 		// Блок прелоадера
-		let preloader = $(this).find('.g-form__preloader');
+		// let preloader = $(this).find('.lds-spinner');
+		let preloader = document.querySelector('.lds-spinner');
 
 		// Кнопка отправки формы
 		let submitButton = $(this).find('.g-form__button');
@@ -47,7 +53,11 @@ $(function() {
 				}
 
   		// Показываем прелоадер
-  		preloader.css('opacity', '1');
+  		// preloader.css('display', 'block');
+		preloader.style.display = 'block';
+
+		// overlay.addClass('overlay');
+		overlay.classList.add('overlay');
 
   		// Делаем неактивной кнопку отправки
   		submitButton.prop('disabled', true);
@@ -65,8 +75,11 @@ $(function() {
 			'display': 'none'
 		});
 
+		overlay.classList.remove('overlay');
+
 		// Прячем прелоадер
-		preloader.css('opacity', '0');
+		// preloader.css('display', 'none');
+		preloader.style.display = 'none';
 
 		// Выводим ответ формы.
 		formRespond.html(successRespond).css('color', '#37b599');

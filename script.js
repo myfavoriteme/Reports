@@ -2,7 +2,7 @@ console.log('hello');
 
 let items = document.querySelectorAll('.item');
 let body = document.querySelector('.body');
-let overlay = document.createElement('div');
+let overlay = document.querySelector('.over');
 let phone = '';
 
 
@@ -55,6 +55,7 @@ if (IsPC() == false) {
         body.append(overlay);
         overlay.classList.add('overlay');
         console.log(a);
+        body.style.overflow = 'hidden';
     }));
 
 
@@ -64,20 +65,25 @@ if (IsPC() == false) {
 
 overlay.onclick = function () {
      closeDescription();
+
 }
 
 
 function closeDescription() {
     document.querySelector('.show-description').classList.remove('show-description');
     overlay.classList.remove('overlay');
+    body.style.overflow = 'visible';
 }
 
 
 
-console.log(IsPC()) 
-console.log(phone)
+
+
+// console.log(IsPC()) 
+// console.log(phone)
 
 document.querySelector('.test1').innerHTML = IsPC();
 document.querySelector('.test2').innerHTML = phone;
 
 }
+
