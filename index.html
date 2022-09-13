@@ -11,7 +11,7 @@
         <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </div>
     <div class="wrapper">
-        <header>
+        <header class="header">
             <!-- <h1 class="header">Спасибо, что выбрали нашу компанию</h1> -->
             <p class="header">Пройдите, пожалуйста, небольшой опрос, чтобы мы могли настроить программу мониторинга специально для Вас.</p>
             <!-- <div class="g-form__preloader"></div> -->
@@ -22,7 +22,7 @@
             <form class="g-form" id="g-form-1" action="" method="post" autocomplete="off">
                 
 
-                <div class="report textarea">
+                <div class="report textarea report_item">
                     
                     <section class="report_item">
                         <div class="report-name item zero" num="zero">Укажите название вашей организации
@@ -30,17 +30,45 @@
                     </section>
                     
                     <div class="input-wrapper">
-                        <input class="checkbox text" type="text" name="Название организации" id="reportName" placeholder="Название организации" required>
+                        <input style="font-size: 1rem;" class="checkbox text" type="text" size="50" name="Название организации" id="reportName" placeholder="Название организации" required>
                     </div>
                 </div>
 
                 
 
+                
+
+                <fieldset class="fieldset report_item">
+
+                    <h2 class="title">Укажите, какой деятельностью занят Ваш коммерческий транспорт?</h2>
+                    <label class="">
+                        <input type="checkbox" name="Сфера деятельности" id="" value="building">
+                        Строительство
+                    </label>
+
+                    <label class="">
+                        <input type="checkbox" name="Сфера деятельности" id="" value="ref">
+                        Рефрижераторные перевозки
+                    </label>
+
+                    <label class="">
+                        <input type="checkbox" name="Сфера деятельности" id="" value="passenger">
+                        Пассажирские перевозки
+                    </label>
+
+                    <label>
+                        <div class="report_item" style="margin: 0.3rem 0 0 1.4rem;">Другое:</div> 
+                        <input  style="display: flex;
+                        flex-direction: column; font-size: 1rem; margin-top: 4px;" type="text" placeholder="Сфера деятельности" name="Сфера деятельности">
+                        
+                    </label>
+                </fieldset>
+
                 <h2 class="title">Какие данные Вы хотели бы получать в отчете?</h2>
 
                 <!-- <div class="report">
                     <div class="input-wrapper">
-                        <input class="checkbox" type="checkbox" name="Название отчета" id="reportName">
+                        <input class="checkbox" type="radio" name="Сфера деятельности" id="reportName">
                     </div>
                     
                     <section class="report_item">
@@ -56,7 +84,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="two">Поездки
+                        <div class="report-name item" num="two">Поездки <img class="report__icon" src="/icons/circle-question-regular.svg" alt="">
                         <span class="description two">Табличный отчет Поездки отражает интервалы движения объекта с указанием места, времени и других параметров (скорость, пробег, топливо и др.). Параметры для определения интервалов движения и стоянки берутся из детектора поездок и могут быть настроены для каждого объекта индивидуально.</span>    
                         </div>  
                     </section>  
@@ -68,7 +96,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="three">Остановки
+                        <div class="report-name item" num="three">Остановки 
                         <span class="description three">Остановкой считается одно и более сообщений подряд с нулевой или незначительной скоростью. Остановки могут фиксироваться на светофорах, перекрестках, в пробках и т. п.</span>    
                         </div>  
                     </section>  
@@ -202,7 +230,69 @@
                     </section>
                 </div>
 
+
+                <h2 class="title">Какие графики построить в отчетах?</h2>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Графики" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item" num="r19">Уровень топлива
+                        <span class="description r19">Позвоняет видеть уровень топлива в любой момент внутри выбранного временного интервала. Также можно комбмнировать данный график с моточасами или поездками.</span>    
+                        </div>  
+                    </section>
+                </div>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Графики" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item" num="r20">Температура
+                        <span class="description r20">Данный график используется для анализа температуры (например, у рефрижераторов).</span>    
+                        </div>  
+                    </section>
+                </div>
+
                 
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Графики" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item" num="r24">Частота оборотов двигателя
+                        <span class="description r24">Данный параметр возможно получить, подключивщись с CAN шине</span>    
+                        </div>  
+                    </section>
+                </div>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Графики" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name item" num="r25">Температура охлаждающей жидкости
+                        <span class="description r25"> Контроль температуры охлаждающей жидкости помогает уберечь двигатель от перегрева. Данный параметр возможно получить, подключивщись с CAN шине</span>    
+                        </div>  
+                    </section>
+                </div>
+
+                <div class="report">
+                    <div class="input-wrapper">
+                        <input class="checkbox" type="checkbox" name="Графики" id="">
+                    </div>
+                    
+                    <section class="report_item">
+                        <div class="report-name  item" num="r26">Угол наклона
+                        <span class="description r26">Датчик угла наклона позволяет контролировать положение кузова самосвала, работу эскаватора и частоту вращения бетономешалки</span>    
+                        </div>  
+                    </section>
+                </div>
 
                 <h2 class="title">Какие уведомления Вы хотели бы получать?</h2>
 

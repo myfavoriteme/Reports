@@ -59,6 +59,8 @@ $(function() {
 		// overlay.addClass('overlay');
 		overlay.classList.add('overlay');
 
+		body.style.overflow = 'hidden';
+
   		// Делаем неактивной кнопку отправки
   		submitButton.prop('disabled', true);
 
@@ -80,6 +82,7 @@ $(function() {
 		// Прячем прелоадер
 		// preloader.css('display', 'none');
 		preloader.style.display = 'none';
+		body.style.overflow = 'visible';
 
 		// Выводим ответ формы.
 		formRespond.html(successRespond).css('color', '#37b599');
