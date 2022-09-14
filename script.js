@@ -84,7 +84,7 @@ console.log(phone)
 console.log(screenWidth)
 
 
-document.querySelector('.test1').innerHTML = IsPC();
+document.querySelector('.test1').innerHTML = screenWidth;
 document.querySelector('.test2').innerHTML = phone;
 
 }
