@@ -76,7 +76,8 @@ body{
     /* display: inline-block; */
     justify-self: center;
     align-self: flex-start;
-    box-shadow: 3px 3px 5px 1px #555;
+    box-shadow: 3px 3px 9px 3px #555;
+    
 }
 .main{
     border-radius: 1rem;
@@ -269,7 +270,7 @@ p{
         width: 15rem;
     }
     .wrapper{
-      width: 90vw;
+      width: 100vw;
     }
     .body{
       width: 100%;
@@ -289,9 +290,10 @@ p{
       width: 12rem;
       top: 7rem;
     }
-    /* .header-background{
-      height: ;
-    } */
+    .header-background{
+      /* position: fixed;
+      margin-bottom: 30rem; */
+    }
 }
 
 

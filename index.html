@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Сатурн М | Опрос абонентов</title>
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
@@ -45,25 +46,41 @@
 
                 <fieldset class="fieldset report_item">
 
-                    <h2 class="title">Укажите, какой деятельностью занят Ваш коммерческий транспорт?</h2>
-                    <label class="">
-                        <input type="checkbox" name="Сфера деятельности" id="" value="building">
-                        Строительство
+                    <h2 class="title">Укажите, какой тип транспорта Вы используете?</h2>
+                    <label class="report">
+                        <input type="checkbox" class="checkbox" name="Сфера деятельности" id="" value="Строительная техника">
+                        Строительная техника
                     </label>
 
-                    <label class="">
-                        <input type="checkbox" name="Сфера деятельности" id="" value="ref">
-                        Рефрижераторные перевозки
+                    <label class="report">
+                        <input type="checkbox" class="checkbox" name="Сфера деятельности" id="" value="Рефрижераторы">
+                        Рефрижераторы
                     </label>
 
-                    <label class="">
-                        <input type="checkbox" name="Сфера деятельности" id="" value="passenger">
-                        Пассажирские перевозки
+                    <label class="report">
+                        <input type="checkbox" class="checkbox" name="Сфера деятельности" id="" value="Самосвалы">
+                        Самосвалы
                     </label>
 
+                    <label class="report">
+                        <input type="checkbox" class="checkbox" name="Сфера деятельности" id="" value="Тягачи">
+                        Тягачи
+                    </label>
+
+                    <label class="report">
+                        <input type="checkbox" class="checkbox" name="Сфера деятельности" id="" value="passenger">
+                        Сельскохозяйственная техника
+                    </label>
+
+                    <label class="report">
+                        <input type="checkbox" class="checkbox" name="Сфера деятельности" id="" value="passenger">
+                        Пассажирский транспорт
+                    </label>
+
+                    
                     <label>
-                        <div class="report_item" style="margin: 0.3rem 0 0 1.4rem;">Другое:</div> 
-                        <input  style="display: flex;
+                        <div class="report_item" style="margin: 0.7rem 0 0.2rem 1.4rem;">Другое:</div> 
+                        <input class="checkbox"  style="display: flex;
                         flex-direction: column; font-size: 1rem; margin-top: 4px;" type="text" placeholder="Сфера деятельности" name="Сфера деятельности">
                         
                     </label>
@@ -92,7 +109,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="three">Остановки 
+                        <div class="report-name item" num="three">Остановки <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description three">Остановкой считается одно и более сообщений подряд с нулевой или незначительной скоростью. Остановки могут фиксироваться на светофорах, перекрестках, в пробках и т. п.</span>    
                         </div>  
                     </section>  
@@ -104,7 +121,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="four">Стоянки
+                        <div class="report-name item" num="four">Стоянки <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description four">Стоянкой будет считаться интервал времени, на котором выполнялись следующие условия:
                             <ol>
                                 <li>Незначительная скорость</li>
@@ -122,7 +139,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="five">Заправки
+                        <div class="report-name item" num="five">Заправки <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description five">Эта таблица отчета позволяет узнать, где и когда производились заправки объекта. Здесь показываются заправки, зарегистрированные вручную и определенные при помощи датчиков уровня топлива. О том, как правильно настроить параметры, используемые в отчете, читайте в настройках ДУТ. Если за указанный интервал отчета не обнаружено ни одной заправки, таблица не показывается.</span>    
                         </div>  
                     </section>
@@ -134,7 +151,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="six">Сливы
+                        <div class="report-name item" num="six">Сливы <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description six">Эта таблица отчета позволяет узнать, где и когда с объекта сливалось топливо. Сливы топлива определяются во время стоянок и остановок, а также при движении объекта, если включена опция Поиск сливов в движении.</span>    
                         </div>  
                     </section>
@@ -146,7 +163,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="seven">Геозоны
+                        <div class="report-name item" num="seven">Геозоны <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description seven">Используется для анализа посещения объектами геозоны.</span>    
                         </div>  
                     </section>
@@ -159,7 +176,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="eight">Моточасы
+                        <div class="report-name item" num="eight">Моточасы <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description eight">Отчет показывает, как долго работал объект, сколько времени находился в движении, сколько топлива потратил за этот промежуток. Также может быть показана длительность и эффективность работы навесного оборудования.</span>    
                         </div>  
                     </section>
@@ -171,7 +188,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="nine">Трассировка датчика
+                        <div class="report-name item" num="nine">Трассировка датчика <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description nine">Эта таблица показывает значение датчика в определенные точки времени. При экспорте в MS Excel это позволяет на основе полученных данных создавать пользовательские графики.</span>    
                         </div>  
                     </section>
@@ -184,7 +201,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="ten">Превышение скорости
+                        <div class="report-name item" num="ten">Превышение скорости <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description ten">В этом отчете показываются интервалы превышения скорости. Скоростной предел зависит от метода определения превышения, выбранного в свойствах объекта на вкладке Дополнительно.
                             (Если на вкладке Дополнительно выбран метод Дорожные ограничения, то превышение скорости для отчета определяется в соответствии с теми ограничениями из карт, которые действовали на момент превышения.)</span>    
                         </div>  
@@ -197,7 +214,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="eleven">Поездки между геозонами
+                        <div class="report-name item" num="eleven">Поездки между геозонами <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description eleven">Wialon может отслеживать поездки между геозонами, если одну из них (или несколько) назначить отправным пунктом, а другую (или несколько) — конечным.</span>    
                         </div>  
                     </section>
@@ -209,7 +226,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name  item" num="r12">Техобслуживание
+                        <div class="report-name  item" num="r12">Техобслуживание <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r12">Таблица по техобслуживанию содержит перечень сервисных работ, совершенных за указанный период и зарегистрированных пользователем для выбранного объекта.</span>    
                         </div>  
                     </section>
@@ -221,7 +238,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r13">Плановое техобслуживание
+                        <div class="report-name item" num="r13">Плановое техобслуживание <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r13">Таблица по плановому техобслуживанию содержит перечень необходимых сервисных работ, а также состояние их выполнения. В таблицу могут быть включены столбцы, описанные ниже.</span>    
                         </div>  
                     </section>
@@ -237,7 +254,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r19">Уровень топлива
+                        <div class="report-name item" num="r19">Уровень топлива <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r19">Позвоняет видеть уровень топлива в любой момент внутри выбранного временного интервала. Также можно комбмнировать данный график с моточасами или поездками.</span>    
                         </div>  
                     </section>
@@ -249,7 +266,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r20">Температура
+                        <div class="report-name item" num="r20">Температура <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r20">Данный график используется для анализа температуры (например, у рефрижераторов).</span>    
                         </div>  
                     </section>
@@ -262,7 +279,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r24">Частота оборотов двигателя
+                        <div class="report-name item" num="r24">Частота оборотов двигателя <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r24">Данный параметр возможно получить, подключивщись с CAN шине</span>    
                         </div>  
                     </section>
@@ -274,7 +291,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r25">Температура охлаждающей жидкости
+                        <div class="report-name item" num="r25">Температура охлаждающей жидкости <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r25"> Контроль температуры охлаждающей жидкости помогает уберечь двигатель от перегрева. Данный параметр возможно получить, подключивщись с CAN шине</span>    
                         </div>  
                     </section>
@@ -286,7 +303,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name  item" num="r26">Угол наклона
+                        <div class="report-name  item" num="r26">Угол наклона <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r26">Датчик угла наклона позволяет контролировать положение кузова самосвала, работу эскаватора и частоту вращения бетономешалки</span>    
                         </div>  
                     </section>
@@ -303,7 +320,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r14">Скорость
+                        <div class="report-name item" num="r14">Скорость <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r14">Уведомление этого типа позволяет контролировать скорость транспортного средства.</span>    
                         </div>  
                     </section>  
@@ -315,7 +332,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r15">Геозона
+                        <div class="report-name item" num="r15">Геозона <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r15">Позволяет контролировать местоположение объекта и получать уведомление когда машина покинула геозону или придыла в нее   
                         </span>    
                         </div>  
@@ -328,7 +345,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r16">Значение датчика
+                        <div class="report-name item" num="r16">Значение датчика <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r16">Используется для контроля таких датчиков как: датчик угла наклона, температурный датчик, датчик вибрации, датчик открытия дверей, датчик уровня толплива.</span>    
                         </div>  
                     </section>
@@ -340,7 +357,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r17">Потеря связи
+                        <div class="report-name item" num="r17">Потеря связи <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r17">Позволяет получить уведомление когда трекер не отправляет сообщения на протяжении определенного отрезка времени.</span>    
                         </div>  
                     </section>
@@ -352,7 +369,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r18">Простой
+                        <div class="report-name item" num="r18">Простой <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r18">Уведомления этого типа используются, чтобы контролировать простой транспортных средств.</span>    
                         </div>  
                     </section>
@@ -364,7 +381,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r19">Адрес
+                        <div class="report-name item" num="r19">Адрес <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r19">Это уведомление срабатывает, если объект находится в определенном месте или за его пределами.</span>    
                         </div>  
                     </section>
@@ -376,7 +393,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r20">Заправка
+                        <div class="report-name item" num="r20">Заправка <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r20">Уведомления этого типа позволяют контролировать заправки топлива.</span>    
                         </div>  
                     </section>
@@ -389,7 +406,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r21">Слив
+                        <div class="report-name item" num="r21">Слив <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r21">Уведомления этого типа позволяют контролировать сливы топлива.</span>    
                         </div>  
                     </section>
@@ -401,7 +418,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name item" num="r22">Техобслуживание
+                        <div class="report-name item" num="r22">Техобслуживание <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r22">Уведомления этого типа используются для сервисов, созданных в свойствах объектов на вкладке Техобслуживание.</span>    
                         </div>  
                     </section>
@@ -413,7 +430,7 @@
                     </div>
                     
                     <section class="report_item">
-                        <div class="report-name  item" num="r23">Взаиморасположение объектов
+                        <div class="report-name  item" num="r23">Взаиморасположение объектов <img class="report__icon" src="icons/circle-question-regular.svg" alt="">
                         <span class="description r23">С помощью уведомлений этого типа вы можете контролировать приближение или отдаление объектов друг от друга.</span>    
                         </div>  
                     </section>
