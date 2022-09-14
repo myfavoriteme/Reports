@@ -146,6 +146,7 @@ p{
     position: absolute;
     z-index: 3;
     /* top: 125%;*/
+    top: 1.5rem;
     left: 2rem; 
     margin-left: -60px;
     opacity: 0;
@@ -257,6 +258,12 @@ p{
   flex-direction: column;
 }
 
+@media screen and (max-width : 575px){
+  .description{
+    width: 20rem;
+  }
+}
+
 @media screen and (max-width : 450px) {
     .description{
         width: 15rem;
@@ -331,7 +338,7 @@ p{
     width: 6px;
     height: 18px;
     border-radius: 20%;
-    background: white
+    background: white;
   }
   .lds-spinner div:nth-child(1) {
     transform: rotate(0deg);

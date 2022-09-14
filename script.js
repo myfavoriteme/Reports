@@ -44,7 +44,7 @@ console.log(navigator.userAgent);
 
 
 
-if (false == false) {
+if (IsPC() == false) {
 
 // Show description
 
