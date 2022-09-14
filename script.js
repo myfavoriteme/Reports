@@ -44,7 +44,7 @@ console.log(navigator.userAgent);
 
 
 
-if (IsPC() == false) {
+if (false == false) {
 
 // Show description
 
@@ -76,11 +76,13 @@ function closeDescription() {
 }
 
 
+const screenWidth = window.innerWidth;
 
 
+console.log(IsPC()) 
+console.log(phone)
+console.log(screenWidth)
 
-// console.log(IsPC()) 
-// console.log(phone)
 
 document.querySelector('.test1').innerHTML = IsPC();
 document.querySelector('.test2').innerHTML = phone;
