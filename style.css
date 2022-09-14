@@ -126,14 +126,18 @@ p{
     text-align: start;
     width: 100%;
     position: relative;
-    display: block;
+    display: flex;
+    
     flex-direction: row;
     
   }
   
   .description {
+    /* overflow: hidden; */
     visibility: hidden;
-    width: 20rem;
+    width: 25rem;
+    /* max-width: 100%; */
+    height: auto;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -141,11 +145,12 @@ p{
     padding: 5px 2px;
     position: absolute;
     z-index: 3;
-    top: 125%;
-    left: 30%;
+    /* top: 125%;*/
+    left: 2rem; 
     margin-left: -60px;
     opacity: 0;
     transition: opacity 0.5s;
+    word-wrap: break-word;
   }
 /*  
   .report .description::after {
@@ -245,6 +250,7 @@ p{
     color: #37538B;
     justify-self: center;
     align-self: center;
+    cursor: pointer;
 }
 .g-form{
   display: flex;
