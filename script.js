@@ -84,8 +84,30 @@ console.log(phone)
 console.log(screenWidth)
 
 
-document.querySelector('.test1').innerHTML = screenWidth;
-document.querySelector('.test2').innerHTML = phone;
 
+
+
+
+
+// document.querySelector('.test1').innerHTML = screenWidth;
+// document.querySelector('.test2').innerHTML = phone;
+
+}
+
+
+// Reports auto sending block
+
+let autoSend = document.querySelector('#autoReportsYes');
+let auto = document.querySelector('.auto');
+
+console.log(auto)
+document.onclick = function() {
+    if (autoSend.checked) {
+        console.log('yes');
+        auto.classList.remove('hide');
+    }
+    else{
+        auto.classList.add('hide');
+    }
 }
 
