@@ -11,8 +11,8 @@ body{
     
 }
 .title{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
     font-size: 1.4rem;
     color: #4166B2;
 }
@@ -81,7 +81,7 @@ body{
 }
 .main{
     border-radius: 1rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding: 1rem;
     /* background-color: rgb(235, 235, 235); */
     background: rgba(55, 83, 139, 0.25);
@@ -288,12 +288,14 @@ p{
     }
     .img{
       width: 12rem;
-      top: 7rem;
+      top: 3rem;
     }
     .header-background{
+      height: 6rem;
       /* position: fixed;
       margin-bottom: 30rem; */
     }
+
 }
 
 
