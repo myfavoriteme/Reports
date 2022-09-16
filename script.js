@@ -5,6 +5,18 @@ let body = document.querySelector('.body');
 let overlay = document.querySelector('.over');
 let phone = '';
 
+//
+// PREVENT SENDING ON ENTER
+//(Important staff)
+//
+
+document.querySelector('body').addEventListener('keydown', function PreventSending(e) {
+    if (e.keyCode == 13){
+    e.preventDefault();
+    }
+ })   
+
+
 
 //Identify devise
 
