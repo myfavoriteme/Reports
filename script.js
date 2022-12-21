@@ -81,6 +81,7 @@ if (IsPC() == false) {
         price.classList.add('show-price');
         overlay.classList.add('overlay');
         console.log('2222222');
+        body.style.overflow = 'hidden';
     }));
 
 
