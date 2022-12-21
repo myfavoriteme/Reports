@@ -4,6 +4,9 @@ let items = document.querySelectorAll('.item');
 let body = document.querySelector('.body');
 let overlay = document.querySelector('.over');
 let phone = '';
+let money = document.querySelectorAll('.money');
+let price = document.querySelector('.price');
+
 
 //
 // PREVENT SENDING ON ENTER
@@ -71,19 +74,35 @@ if (IsPC() == false) {
     }));
 
 
+// Show price
+
+    money.forEach(с=>с.addEventListener('click', function ShowPrice() {
+        
+        price.classList.add('show-price');
+        overlay.classList.add('overlay');
+        console.log('2222222');
+    }));
+
 
 
 // Close description
 
-overlay.onclick = function () {
-     closeDescription();
+    overlay.onclick = function () {
+        closeDescription();
 
-}
+    }
 
 
 function closeDescription() {
-    document.querySelector('.show-description').classList.remove('show-description');
+    try {
+        document.querySelector('.show-description').classList.remove('show-description');    
+    } catch (error) {
+        document.querySelector('.show-price').classList.remove('show-price');
+    }
+    
+    
     overlay.classList.remove('overlay');
+    
     body.style.overflow = 'visible';
 }
 
@@ -112,7 +131,7 @@ console.log(screenWidth)
 let autoSend = document.querySelector('#autoReportsYes');
 let auto = document.querySelector('.auto');
 
-console.log(auto)
+
 document.onclick = function() {
     if (autoSend.checked) {
         console.log('yes');

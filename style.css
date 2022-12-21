@@ -283,6 +283,7 @@ p{
 .money{
   cursor: pointer;
   position: relative;
+  text-align: start;
 }
 .money-icon{
   height: 1.2rem;
@@ -290,6 +291,7 @@ p{
 
 .money-text{
    visibility: hidden;
+   opacity: 0;
    width: 15rem;
    height: auto;
    background-color: #555;
@@ -302,7 +304,6 @@ p{
    top: 1.5rem;
    left: 2rem; 
    margin-left: -60px;
-   opacity: 0;
    transition: opacity 0.5s;
    word-wrap: break-word;
 }
@@ -311,7 +312,52 @@ p{
   visibility: visible;
   opacity: 1;
 }
-
+.price{
+  margin: 0 auto;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  width: 15rem;
+  height: 73px;  
+  transition: opacity 0.5s;
+  let w = window.outerWidth;
+  position: fixed;
+  z-index: 150;
+  top: 200px;
+  left: calc(w - 15rem);
+  box-sizing: border-box;
+  justify-content: center;
+  
+}
+.show-price{
+  visibility: visible;
+  opacity: 1;
+}
+.price-text{
+  margin: 0 auto;
+  width: 15rem;
+  height: auto;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 2px;
+  position: absolute;
+  font-size: 1.1rem;
+  word-wrap: break-word;
+}
+@media screen and (max-width : 650px){
+  .money:hover .money-text{
+    visibility: hidden;
+    opacity: 0;
+  }
+  .money-text{
+  display: none;
+  }
+  /* .body{
+    overflow: hidden;
+  } */
+}
 
 @media screen and (max-width : 575px){
   .description{
